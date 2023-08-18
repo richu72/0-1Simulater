@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">0-1シミュレーション</string>
+    <string name="start">スタート</string>
+    <string name="setting">設定(仮)</string>
+    <string name="continuation">続きから</string>
+    <string name="zero">2の0乗</string>
+    <string name="first">2の１乗</string>
+    <string name="second">2の2乗</string>
+    <string name="third">2の3乗</string>
+    <string name="fourth">2の4乗</string>
+    <string name="fifth">2の5乗</string>
+    <string name="sixth">2の6乗</string>
+    <string name="seventh">2の7乗</string>
+    <string name="eighth">2の8乗</string>
+    <string name="ninth">2の9乗</string>
+    <string name="tenth">2の10乗</string>
+    <string name="eleventh">2の11乗</string>
+    <string name="back">戻る(仮)</string>
+    <string name="answer_zero">0</string>
+    <string name="answer_one">1</string>
+    <string name="answer_no">分からない</string>
+    <string name="save">一時保存</string>
+</resources>
