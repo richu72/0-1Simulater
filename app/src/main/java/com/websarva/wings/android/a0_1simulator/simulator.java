@@ -32,30 +32,8 @@ public class simulator extends AppCompatActivity {
         TextView tv = findViewById(R.id.tvQuestionNo);
         tv.setText("問題 "+String.valueOf(sm.current_number));
 
-        ImageView i1 = findViewById(R.id.imageView1);
-        i1.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i2 = findViewById(R.id.imageView2);
-        i2.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i3 = findViewById(R.id.imageView3);
-        i3.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i4 = findViewById(R.id.imageView4);
-        i4.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i5 = findViewById(R.id.imageView5);
-        i5.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i6 = findViewById(R.id.imageView6);
-        i6.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i7 = findViewById(R.id.imageView7);
-        i7.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i8 = findViewById(R.id.imageView8);
-        i8.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i9 = findViewById(R.id.imageView9);
-        i9.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i10 = findViewById(R.id.imageView10);
-        i10.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i11 = findViewById(R.id.imageView11);
-        i11.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        ImageView i12 = findViewById(R.id.imageView12);
-        i12.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        setImages(sm.images);
+
     }
     public void back (View v) {
         Intent intent = new Intent(this,MainActivity.class);//開く画面
@@ -80,19 +58,8 @@ public class simulator extends AppCompatActivity {
         int[] images = sm.getNextImages();
         TextView tv = findViewById(R.id.tvQuestionNo);
         tv.setText("問題 "+String.valueOf(sm.current_number));
+        setImages(images);
 
-        if(images[0]==0){
-            ImageView by = findViewById(R.id.imageView1);
-            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        }
-        else if(images[1]==0){
-            ImageView by = findViewById(R.id.imageView2);
-            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
-        }
-        else{
-            ImageView by = findViewById(R.id.imageView1);
-            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
-        }
         for(int i=0;i<12;i++){
             System.out.println(images[i]);
         }
@@ -108,6 +75,104 @@ public class simulator extends AppCompatActivity {
         }
         catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+    public  void setImages(int[] images){
+        if(images[0]==0){
+            ImageView by = findViewById(R.id.imageView1);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView1);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[1]==0){
+            ImageView by = findViewById(R.id.imageView2);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView2);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[2]==0){
+            ImageView by = findViewById(R.id.imageView3);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView3);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[3]==0){
+            ImageView by = findViewById(R.id.imageView4);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView4);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[4]==0){
+            ImageView by = findViewById(R.id.imageView5);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView5);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[5]==0){
+            ImageView by = findViewById(R.id.imageView6);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView6);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[6]==0){
+            ImageView by = findViewById(R.id.imageView7);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView7);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[7]==0){
+            ImageView by = findViewById(R.id.imageView8);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView8);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[8]==0){
+            ImageView by = findViewById(R.id.imageView9);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView9);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[9]==0){
+            ImageView by = findViewById(R.id.imageView10);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView10);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[10]==0){
+            ImageView by = findViewById(R.id.imageView11);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView11);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
+        }
+        if(images[11]==0){
+            ImageView by = findViewById(R.id.imageView12);
+            by.setBackgroundColor(Color.rgb(0xff, 0xff,0xff));
+        }
+        else{
+            ImageView by = findViewById(R.id.imageView12);
+            by.setBackgroundColor(Color.rgb(0x00, 0x00,0x00));
         }
     }
 }

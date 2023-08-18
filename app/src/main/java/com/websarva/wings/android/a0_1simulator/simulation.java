@@ -26,12 +26,15 @@ public class simulation implements Serializable {
 
     public int[] getNextImages() {
         current_number++;
+        calcImages();
+        return images;
+    }
+    public void calcImages(){
         int d = current_number;
         for (int j = 0; j < 12; j++) {
             images[j] = d % 2;
             d /= 2;
         }
-        return images;
     }
 
     public void load_from_file() {
@@ -50,5 +53,6 @@ public class simulation implements Serializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        calcImages();
     }
 }
