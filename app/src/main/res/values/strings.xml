@@ -15,9 +15,21 @@
     <string name="ninth">2の9乗</string>
     <string name="tenth">2の10乗</string>
     <string name="eleventh">2の11乗</string>
-    <string name="back">戻る(仮)</string>
+    <string name="back">戻る</string>
     <string name="answer_zero">0</string>
     <string name="answer_one">1</string>
+    <string name="answer_two">2</string>
+    <string name="answer_three">3</string>
+    <string name="answer_four">4</string>
+    <string name="answer_five">5</string>
+    <string name="answer_six">6</string>
+    <string name="answer_seven">7</string>
+    <string name="answer_eight">8</string>
+    <string name="answer_nine">9</string>
     <string name="answer_no">分からない</string>
     <string name="save">一時保存</string>
+    <string name="dialog_title">タイトル</string>
+    <string name="dialog_msg">メッセージ</string>
+    <string name="dialog_btn_yes">はい</string>
+    <string name="dialog_btn_no">いいえ</string>
 </resources>

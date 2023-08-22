@@ -1,10 +1,12 @@
 package com.websarva.wings.android.a0_1simulator;
 
 import android.content.Context;
+import android.view.View;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.Arrays;
@@ -54,5 +56,18 @@ public class simulation implements Serializable {
             e.printStackTrace();
         }
         calcImages();
+    }
+    public void save(){
+        String str ="";
+        for(int i=0;i< current_number;i++){
+            str+=String.valueOf(i)+"\t"+String.valueOf(answers[i])+"\n";
+        }
+        try (FileWriter writer = new FileWriter(file)) {
+            writer.write(str);
+            writer.close();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
