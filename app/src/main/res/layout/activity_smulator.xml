@@ -10,13 +10,14 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
-        android:layout_width="312dp"
-        android:layout_height="282dp"
+        android:layout_width="313dp"
+        android:layout_height="284dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.786">
 
         <Button
             android:id="@+id/answer_nine"
@@ -115,11 +116,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <Button
             android:id="@+id/answer_two"
             android:layout_width="100dp"
             android:layout_height="70dp"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="0dp"
             android:backgroundTint="@color/background_selector"
             android:onClick="answer"
             android:text="2"
@@ -137,10 +140,9 @@
             android:text="3"
             android:textColor="@color/color_selector"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toEndOf="@+id/answer_two"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <Button
             android:id="@+id/answer_zero"
@@ -177,33 +179,27 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="73dp"
-        android:layout_height="160dp"
+        android:layout_width="72dp"
+        android:layout_height="125dp"
         android:backgroundTint="@color/background_selector"
         android:onClick="back"
         android:text="@string/back"
         android:textColor="@color/color_selector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="72dp"
-        android:layout_height="103dp"
+        android:layout_width="75dp"
+        android:layout_height="155dp"
         android:backgroundTint="@color/background_selector"
         android:onClick="saveTemporarily"
         android:text="@string/save"
         android:textColor="@color/color_selector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuestionNo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionNo" />
 
     <TextView
         android:id="@+id/tvQuestionNo"
@@ -211,22 +207,19 @@
         android:layout_height="29dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="245dp"
-        android:layout_height="325dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="246dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView1"
@@ -287,7 +280,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginTop="2dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toBottomOf="@+id/imageView3"
             tools:srcCompat="@color/white" />
@@ -346,8 +339,8 @@
 
         <ImageView
             android:id="@+id/imageView12"
-            android:layout_width="82dp"
-            android:layout_height="85dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginStart="2dp"
             android:layout_marginTop="2dp"
             app:layout_constraintEnd_toEndOf="parent"
