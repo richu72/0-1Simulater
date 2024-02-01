@@ -22,18 +22,22 @@
 layoutのactivity_end.xml画面に移行する
 ### MainActivity
 アプリ起動時に行われる動作
+#### protected void onCreate(Bundle savedInstanceState)
 ```
 @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);//1
 
-        Context context = getApplicationContext();
+        Context context = getApplicationContext();//2
         String fileName = "TestFile.txt";
         File file = new File(context.getFilesDir(), fileName);
         sm=new simulation(file);
     }
 ```
+1.layout.activity_mainを立ち上げる.
+使いアプリケーションの情報を取得し、渡すことで画像等へのアクセスを可能にする
+
 ### menu
 ### simulation
 ### simulator
