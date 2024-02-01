@@ -18,7 +18,14 @@
 ### 終了画面
 4096問解き終わると現れる。お疲れ様です。
 ## コード内容
-### 
+### end
+layoutのactivity_end.xml画面に移行する
+### MainActivity
+### menu
+### simulation
+### simulator
+### YesNoDialog
+
 ## Android studioについて
 ### JavaからKotlinへ
 Android studioではkotlinの拡張ファイルであるktで、javaのコードをコピペすると自動でkotlinの形式に変更される.
