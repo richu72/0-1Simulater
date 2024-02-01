@@ -21,4 +21,4 @@
 ### 
 ## Android studioについて
 ### JavaからKotlinへ
-Android studioでは
+Android studioではkotlinの拡張ファイルであるktで、javaのコードをコピペすると自動でkotlinの形式に変更される.
