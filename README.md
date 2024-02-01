@@ -36,7 +36,7 @@ layoutのactivity_end.xml画面に移行する
     }
 ```
 1.layout.activity_mainを立ち上げる.
-使いアプリケーションの情報を取得し、渡すことで画像等へのアクセスを可能にする
+2.アプリケーションの情報を取得し、```Context context```に渡すことで画像等へのアクセスを可能にする
 
 ### menu
 ### simulation
