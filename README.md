@@ -54,8 +54,50 @@ menuクラスを実行する
 それ以外の機能は未完成
 
 ### simulation
+dataの処理で扱う関数をまとめている    
+各クラスでsmとして用いている
+#### 変数
+```
+File file;//新しく書き込むファイル
+
+    int[] images = new int[12];//白黒画像の各配列
+    int[] answers = new int[4096];//それぞれの回答を保存する配列
+    int current_number;//問題の数を表す変数
+```
+#### public simulation(File file_)
+``file_```を新しくする    
+初期化し、すべての画像を白にする
+
+#### public int[] getNextImages()
+二進数の処理を呼び出し、それに合わせた画像を返す
+
+#### public void calcImages()
+二進数の処理
+
+#### public void load_from_file()
+```
+public void load_from_file() {
+    String text = null;
+    try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+        while (true) {
+            text = br.readLine();
+            if (text == null) {
+                break;
+            }
+            String[] nums = text.split("\t");
+            answers[current_number++] = Integer.parseInt(nums[1]);
+        }
+    }
+    catch (IOException e) {
+        e.printStackTrace();
+    }
+    calcImages();
+}
+```
+#### public void save()
 ### simulator
-```layout.activity_smulator.xml``` に初期化の状態で、移行する
+```layout.activity_smulator.xml``` に初期化の状態で、移行する    
+```layout.activity_smulator.xml``` での各buttonが押されたときに画面が切り替わるcode
 ### YesNoDialog
 アプリ作成時にどこからのサイトから取り出してきた    
 詳細は不明で、このアプリには使用されていない
