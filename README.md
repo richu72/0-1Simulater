@@ -19,4 +19,6 @@
 4096問解き終わると現れる。お疲れ様です。
 ## コード内容
 ### 
-
+## Android studioについて
+### JavaからKotlinへ
+Android studioでは
