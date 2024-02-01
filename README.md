@@ -37,7 +37,7 @@
 ```
 1.layout.activity_mainを立ち上げる    
 2.アプリケーションの情報を取得し、```Context context``` に渡すことで画像等へのアクセスを可能にする    
-3.File型オブジェクトを作成し、アプリの内部ストレージに```TestFile.txt```という名前のファイルを表しています。
+3.File型オブジェクトを作成し、アプリの内部ストレージに```TestFile.txt```という名前のファイルを作成
 
 #### public void start (View v)
 simulatorクラスを実行する
