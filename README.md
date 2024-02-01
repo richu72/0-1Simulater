@@ -57,7 +57,8 @@ menuクラスを実行する
 ### simulator
 ```layout.activity_smulator.xml``` に初期化の状態で、移行する
 ### YesNoDialog
-
+アプリ作成時にどこからのサイトから取り出してきた    
+詳細は不明で、このアプリには使用されていない
 ## Android studioについて
 ### JavaからKotlinへ
 Android studioではkotlinの拡張ファイルであるktで、javaのコードをコピペすると自動でkotlinの形式に変更される.
