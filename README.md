@@ -19,7 +19,7 @@
 4096問解き終わると現れる。お疲れ様です。
 ## コード内容
 ### end
-layoutのactivity_end.xml画面に移行する
+```layout.activity_end.xml``` 画面に移行する
 ### MainActivity
 アプリ起動時に行われる動作
 #### protected void onCreate(Bundle savedInstanceState)
@@ -31,16 +31,31 @@ layoutのactivity_end.xml画面に移行する
 
         Context context = getApplicationContext();//2
         String fileName = "TestFile.txt";
-        File file = new File(context.getFilesDir(), fileName);
+        File file = new File(context.getFilesDir(), fileName);//3
         sm=new simulation(file);
     }
 ```
 1.layout.activity_mainを立ち上げる.
-2.アプリケーションの情報を取得し、```Context context```に渡すことで画像等へのアクセスを可能にする
+2.アプリケーションの情報を取得し、```Context context``` に渡すことで画像等へのアクセスを可能にする
+3.File型オブジェクトを作成し、アプリの内部ストレージに```TestFile.txt```という名前のファイルを表しています。
+
+#### public void start (View v)
+simulatorクラスを実行する
+
+#### public void from_cont (View v)
+前回一時保存したfileを呼び出し、simulatorクラスを実行する
+```sm.load_from_file()```で前回保存したファイルを読み込んでいる
+
+#### public void setting (View v)
+menuクラスを実行する
 
 ### menu
+```layout.activity_menu.xml``` に移行する
+それ以外の機能は未完成
+
 ### simulation
 ### simulator
+```layout.activity_smulator.xml``` に初期化の状態で、移行する
 ### YesNoDialog
 
 ## Android studioについて
