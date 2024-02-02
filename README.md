@@ -68,7 +68,7 @@ File file;//新しく書き込むファイル
     int current_number;//問題の数を表す変数
 ```
 #### public simulation(File file_)
-``file_```を新しくする    
+```file_```を新しくする    
 初期化し、すべての画像を白にする
 
 #### public int[] getNextImages()
