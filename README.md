@@ -32,12 +32,15 @@
         Context context = getApplicationContext();//2
         String fileName = "TestFile.txt";
         File file = new File(context.getFilesDir(), fileName);//3
+        //File file = new File(context.getExternalFilesDir(null), fileName);//*
         sm=new simulation(file);
     }
 ```
 1.layout.activity_mainを立ち上げる    
 2.アプリケーションの情報を取得し、```Context context``` に渡すことで画像等へのアクセスを可能にする    
 3.File型オブジェクトを作成し、アプリの内部ストレージに```TestFile.txt```という名前のファイルを作成
+*android studioがバージョンアップしたせいなのか、3ではファイルの生成がされなくなりました。
+ですので、ver.2023.1ではこちらを使っています。
 
 #### public void start (View v)
 simulatorクラスを実行する
